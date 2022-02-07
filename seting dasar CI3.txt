@@ -24,7 +24,7 @@ $autoload['helper'] = array('url');
    RewriteCond %{REQUEST_FILENAME} !-f
    RewriteCond %{REQUEST_FILENAME} !-d
    RewriteRule ^(.*)$ ./index.php/$1 [L,QSA]
-   
+   RewriteRule ^(.*)$ ./(alamat localhost)/index.php/$1 [L,QSA] (apabila cara diatas tidak bisa)
    // database.php // seting database
    
    $db['default'] = array(
